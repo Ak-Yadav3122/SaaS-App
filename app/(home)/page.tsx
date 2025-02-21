@@ -1,10 +1,13 @@
-import React from 'react'
+import Navbar from "@/components/home/navbar/navbar";
+import { Button } from "@/components/ui/button";
+import React from "react";
 
 const HomePage = () => {
   return (
-    <div className='grid items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20'>
-      HomePage</div>
-  )
-}
+    <div>
+      <Navbar />
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;
