@@ -42,7 +42,7 @@ const HeroSection: React.FC<Props> = ({ totalForms, isSubscribed }) => {
             Build AI-Driven Forms Effortlessly
           </h1>
           <p className="mt-4 text-lg ">
-            Leverage the power of AI to create responsive and dynamic froms in
+            Leverage the power of AI to create responsive and dynamic froms in a
             minutes
           </p>
         </div>
