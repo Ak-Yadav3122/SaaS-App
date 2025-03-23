@@ -19,7 +19,7 @@ export const generateForm = async (prevState: unknown, formData: FormData) => {
         // define tthe schema for validation
 
         const schema = z.object({
-            description: z.string().min(1, "Description is required")
+            description: z.string().min(1, "Description is must be required")
         });
 
         const result = schema.safeParse({
@@ -33,7 +33,7 @@ export const generateForm = async (prevState: unknown, formData: FormData) => {
         const description = result.data.description;
 
         if (!process.env.OPENAI_API_KEY) {
-            return { success: false, message: "OPENAI api key not found" }
+            return { success: false, message: "OPENAI API key are not found" }
         }
 
         const prompt = `Generate a JSON response for a form with the following structure. Ensure the keys and format remain constant in every response.
