@@ -10,7 +10,7 @@ export const getForms = async () => {
         const user = await currentUser();
         
         if (!user) {
-            return { success: false, message: "User not found" }
+            return { success: false, message: "User are not found" }
         }
         
         const forms = await prisma.form.findMany({
@@ -20,7 +20,7 @@ export const getForms = async () => {
         });
         
         if (!forms) {
-            return { success: false, message: "Form not found" }
+            return { success: false, message: "Form are not found" }
         }
 
         return {
