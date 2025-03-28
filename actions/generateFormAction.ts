@@ -13,7 +13,7 @@ export const generateForm = async (prevState: unknown, formData: FormData) => {
     try {
         const user = await currentUser();
         if (!user) {
-            return { success: false, message: "User not found" }
+            return { success: false, message: "User are not found" }
         }
 
         // define tthe schema for validation
@@ -33,7 +33,7 @@ export const generateForm = async (prevState: unknown, formData: FormData) => {
         const description = result.data.description;
 
         if (!process.env.OPENAI_API_KEY) {
-            return { success: false, message: "OPENAI API key are not found" }
+            return { success: false, message: "Your OPENAI API key are not found" }
         }
 
         const prompt = `Generate a JSON response for a form with the following structure. Ensure the keys and format remain constant in every response.
@@ -63,7 +63,7 @@ Requirements:
 
         const formContent = completion.choices[0]?.message.content;
         if (!formContent) {
-            return { success: false, message: "Failed to generate form content" }
+            return { success: false, message: "Failed to generate the form content" }
         }
 
         console.log("generated form -> ",formContent);
