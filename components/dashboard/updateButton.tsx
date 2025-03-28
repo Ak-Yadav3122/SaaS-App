@@ -21,7 +21,8 @@ const UpgradeButton : React.FC<Props> = async ({userId}) => {
     <div className="m-3">
       {isSubscribed ? (
         <span className="text-sm">
-          You have a subscription plan, you are eligble to create more forms
+          You have a subscription plan, you are eligible
+          to create more forms
         </span>
       ) : (
         <>
