@@ -11,7 +11,7 @@ export const deleteForm = async (formId:number) => {
     });
 
     if(!form){
-        return {success:false, message:"Form not found"}
+        return {success:false, message:"Form are not found"}
     }
 
     // make sure update the form list
