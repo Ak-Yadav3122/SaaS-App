@@ -18,7 +18,7 @@ export const createSubscription = async ({userId}:{userId:string}) => {
 export const getUserSubscription = async (userId:string) => {
    // fetch the subscription for the given user id
    if(!userId){
-    throw new Error("User not authenticated")
+    throw new Error("User are not authenticated")
    }
    const subscription = await prisma.subscription.findFirst({
     where:{
