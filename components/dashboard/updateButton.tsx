@@ -22,7 +22,7 @@ const UpgradeButton : React.FC<Props> = async ({userId}) => {
       {isSubscribed ? (
         <span className="text-sm">
           You have a subscription plan, you are eligible
-          to create more forms
+          to create more forms.
         </span>
       ) : (
         <>
@@ -36,7 +36,7 @@ const UpgradeButton : React.FC<Props> = async ({userId}) => {
               {" "}
               Upgrade{" "}
             </Link>{" "}
-            to generate more forms
+            to generate more forms...
           </p>
         </>
       )}
