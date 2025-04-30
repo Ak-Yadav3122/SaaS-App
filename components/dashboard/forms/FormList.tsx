@@ -42,7 +42,7 @@ const FormList: React.FC<Props> = ({ form }) => {
         <CardHeader>
           <CardTitle>{form.content.formTitle}</CardTitle>
           <CardDescription>
-            Deploy your new project in a single click.
+            Deploy your New Project in a single click.
           </CardDescription>
         </CardHeader>
         <CardContent>
