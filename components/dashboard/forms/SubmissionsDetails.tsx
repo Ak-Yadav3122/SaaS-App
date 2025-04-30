@@ -20,7 +20,7 @@ const SubmissionsDetails: React.FC<Props> = ({ submission, index }) => {
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead>Questions</TableHead>
+            <TableHead>Question</TableHead>
             <TableHead>Answer</TableHead>
           </TableRow>
         </TableHeader>
